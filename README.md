@@ -41,7 +41,11 @@ sudo nano /etc/ansible/hosts
 
 - run  ssh-keygen -t rsa on the ansible controller
 - ssh-copy-id username@192.168.0.11
-- Disable Password Authentication (Optional)
+- Disable Password Authentication (Optional) 
+    - $ sudo vi /etc/ssh/sshd_config
+    - Find the line containing PasswordAuthentication and set it to no.
+        PasswordAuthentication no
+
 - Test SSH Passwordless Login from ansible controller
 
  
