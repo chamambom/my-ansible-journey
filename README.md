@@ -34,6 +34,14 @@ So, as here in this tutorial we have three remote servers, let’s add them to t
 sudo nano /etc/ansible/hosts
 
 ![alt text](/refimages/hosts.png)
+
+##### Setup SSH Passwordless Login in Linux 
+
+- run  ssh-keygen -t rsa on the ansible controller
+- ssh-copy-id username@192.168.0.11
+- Disable Password Authentication (Optional)
+- Test SSH Passwordless Login from ansible controller
+
  
 ##### Ping All added Remote servers
 As we have created the inventory file successfully, let’s check whether our Ansible could ping all the added servers or not, for that-
