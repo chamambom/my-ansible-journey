@@ -1,6 +1,6 @@
-#### Treat your Ansible content like code
+### Treat your Ansible content like code
 
-In 2013, my journey with Ansible began. At that time, I served as a Network Operations Engineer for an Internet Service Provider (ISP) that heavily embraced open source solutions across its operations. Within our Network Operations Center (NOC), we had distinct teams for Network Engineering, 
+In 2013, my journey with Ansible began. At that time, I was employed as a Network Operations Engineer for an Internet Service Provider (ISP) that heavily embraced open source solutions across its operations. Within our Network Operations Center (NOC), we had distinct teams for Network Engineering, 
 
 - Systems Engineering and 
 - Network Engineering 
