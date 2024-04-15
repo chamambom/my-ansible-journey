@@ -9,7 +9,41 @@ Although all engineers were expected to possess knowledge in both networks and s
 
 With the ISP experiencing a substantial growth in its customer base, we initiated discussions about implementing automation for all hosted services - SMTP (Postfix), HTTP (Apache), and DNS services.
 
-#### Approach [adopted from Redhat best practices]
+### Setting Up the Ansible Environment
+
+![alt text](/refimages/AnsibleDesign.png)
+
+
+##### Installing Ansible on Ubuntu 22.04
+- sudo apt install software-properties-common
+- sudo add-apt-repository --yes --update ppa:ansible/ansible
+- sudo apt install ansible
+
+![alt text](/refimages/ansibleversion.png)
+
+##### Configure Host Servers
+The servers which you want to manage using Ansible must have SSH installed and port 22 opened in the firewall to access them from other systems such as the one installed with Ansible.
+For example, you have servers running on Ubuntu, Debian, and CentOS that you want to manage and configure using Ansible. Thus, we need to install the SSH server and open port 22 on them.
+
+Now, on each server run the below command, so that we can run commands with sudo on them using Ansible but without entering a password.
+echo "$(whoami) ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$(whoami)
+
+##### Create Inventory File for Remote Hosts
+In Ansible, we create a file where we will define all the remote hosts or target systems that we want to manage. We can also create a group of hosts, for example, one group is a Web server that only contains a remote system running some web servers such as Apache, and the other can be a group of Mysql running a database server and so on. The Inventory file is also important because using it the command, modules, and tasks in a playbook will operate.
+So, as here in this tutorial we have three remote servers, let’s add them to the Ansible host file.
+sudo nano /etc/ansible/hosts
+
+![alt text](/refimages/hosts.png)
+ 
+##### Ping All added Remote servers
+As we have created the inventory file successfully, let’s check whether our Ansible could ping all the added servers or not, for that-
+To ping a group of hosts-
+ansible -m ping group-name
+ansible -m ping all
+
+
+
+#### Approach [adopted from Redhat Ansible Best Practices]
 
 Version control your Ansible content
 - Iterate
