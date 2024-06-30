@@ -1,4 +1,4 @@
-### Treat your Ansible content like code
+### The journey begins
 
 My Ansible journey started in 2013 when I joined an Internet Service Provider (ISP) as a Network Operations Engineer. Although I didn't initially document my journey, I recently found myself immersed in an Ansible & Terraform project. Recognizing the value of documentation, I took the initiative to start documenting my experiences.
  The ISP that I was engaged with at the time was deeply committed to open source technologies across its operations. Within our Network Operations Center (NOC), we had distinct teams for Network Engineering, 
@@ -10,16 +10,22 @@ Although all engineers were expected to possess knowledge in both networks and s
 
 With the ISP experiencing a substantial growth in its customer base, we initiated discussions about implementing automation for all hosted services - SMTP (Postfix), HTTP (Apache), and DNS services.
 
-#### Please Note
+### Goal of this repo. 
+2024, I have finally decided to document my ansible experiences. In my current role, I use a lot of Terraform and I will be looking at how we can efficiently bootstrap ansible with terraform. 
+
+![alt text](/refimages/ansible-tf-intergration.png)
+
+
+#### NB
 - Ansible is better suited to configuration management post infra deployment. 
-- This repo will contain a CI/CD pipeline implementation of ansible using github actions. (I also need to find a way to incoporate terraform in the pipeline)
+- This repo will contain a CI/CD pipeline implementation of ansible using github actions.
 
 ### Setting Up the Ansible Environment
 
 ![alt text](/refimages/AnsibleDesign.png)
 
 
-##### Installing Ansible on Ubuntu 22.04
+##### Installing Ansible on Ubuntu 22.04 [Ansible Controller]
 - sudo apt install software-properties-common
 - sudo add-apt-repository --yes --update ppa:ansible/ansible
 - sudo apt install ansible
@@ -57,8 +63,6 @@ As we have created the inventory file successfully, let’s check whether our An
 To ping a group of hosts-
 ansible -m ping group-name
 ansible -m ping all
-
-
 
 #### Approach [adopted from Redhat Ansible Best Practices]
 
