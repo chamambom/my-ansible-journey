@@ -1,4 +1,3 @@
---
 ### Why Ansible and Terraform?
 
 **Short Answer**: Use Terraform to build your cloud infrastructure (e.g., VPC, AKS, firewall rules), and then utilize Ansible for configuration management and further automation.
