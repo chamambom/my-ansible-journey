@@ -39,13 +39,13 @@ Although all engineers were expected to possess knowledge in both networks and s
 
 With the ISP experiencing a substantial growth in its customer base, we initiated discussions about implementing automation for all hosted services - SMTP (Postfix), HTTP (Apache), and DNS services.
 
-
-
 #### NB
 - Ansible is better suited to configuration management post infra deployment. 
 - This repo will contain a CI/CD pipeline implementation of ansible using github actions.
 
-### Setting Up the Ansible Environment
+---
+
+### How Ansible Works in general.
 
 ![alt text](/refimages/AnsibleDesign.png)
 
