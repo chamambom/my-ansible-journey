@@ -45,7 +45,7 @@ With the ISP experiencing a substantial growth in its customer base, we initiate
 
 ---
 
-### How Ansible Works in general.
+### Let's set aside the bootstrapping for now. How exactly does Ansible work?
 
 ![alt text](/refimages/AnsibleDesign.png)
 
