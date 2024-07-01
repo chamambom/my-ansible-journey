@@ -37,11 +37,8 @@ My integration strategy involves categorizing Ansible runs into two distinct pha
 
 In my current role, I frequently use Terraform and have collaborated with many clients who are adopting Ansible as their primary configuration tool. This repository will document my journey toward developing a Terraform/Ansible bootstrapping approach.
 
----
-
-This version is concise and emphasizes the separation of tasks and the context of your current work.
-
 ![alt text](/refimages/ansible-tf-intergration.png)
+---
 
 
 #### NB
