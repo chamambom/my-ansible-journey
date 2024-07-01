@@ -16,6 +16,17 @@ Each approach has unique benefits, and the best choice will depend on your speci
 
 ---
 
+### My "boostrapping" approach !!
+
+
+My integration strategy involves categorizing Ansible runs into two distinct phases: instance bootstrapping and configuration drift management. 
+
+In my current role, I frequently use Terraform and have collaborated with many clients who are adopting Ansible as their primary configuration tool. This repository will document my journey toward developing a Terraform/Ansible bootstrapping approach.
+
+![alt text](/refimages/ansible-tf-intergration.png)
+
+---
+
 ### How my journey began.
 
 My Ansible journey started in 2013 when I joined an Internet Service Provider (ISP) as a Network Operations Engineer. Although I didn't initially document my journey, I recently found myself immersed in an Ansible & Terraform project. Recognizing the value of documentation, I took the initiative to start documenting my experiences.
@@ -28,16 +39,6 @@ Although all engineers were expected to possess knowledge in both networks and s
 
 With the ISP experiencing a substantial growth in its customer base, we initiated discussions about implementing automation for all hosted services - SMTP (Postfix), HTTP (Apache), and DNS services.
 
-### Why this repo ?
-
----
-
-My integration strategy involves categorizing Ansible runs into two distinct phases: instance bootstrapping and configuration drift management. 
-
-In my current role, I frequently use Terraform and have collaborated with many clients who are adopting Ansible as their primary configuration tool. This repository will document my journey toward developing a Terraform/Ansible bootstrapping approach.
-
-![alt text](/refimages/ansible-tf-intergration.png)
----
 
 
 #### NB
