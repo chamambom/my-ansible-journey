@@ -1,33 +1,20 @@
-### Why Ansible and Terraform?
+### Ansible & Terraform?
+
+*Under maintenance! documentation clean up & streamlining of ansible terraform intergration process*
+
+## How my journey Ansible Journey Began.
+
+NB - My experience in Ansible was in an environment that never used Terraform. Now that I have experience in both tools, this repo seeks out to explore approaches that one can use to intergrate the 2 tools. 
+
+
+Which one is best suited for what ?
 
 **Short Answer**: Use Terraform to build your cloud infrastructure (e.g., VPC, AKS, firewall rules), and then utilize Ansible for configuration management and further automation.
 
 **Ansible**: Ideal for configuration management, automating application deployment, and managing complex software setups.
-
 **Terraform**: Best suited for infrastructure provisioning, allowing you to define, provision, and manage cloud resources in a consistent manner.
 
-Currently, there is no straightforward Terraform/Ansible bootstrapper available, so creating your own integration is necessary. Here are a few considerations:
-
-- **Terraform with Packer-Baked AMIs**: Utilize Packer (typically with shell scripts) to create custom AMIs pre-configured for your nodes.
-- **Terraform with Provisioners**: Leverage Terraform's provisioners to automate tasks that need to occur after infrastructure provisioning.
-- **Custom Solutions**: Develop a tailored pipeline that combines Terraform and Ansible to streamline both infrastructure and configuration management processes.
-
-Each approach has unique benefits, and the best choice will depend on your specific requirements and environment.
-
----
-
-### My "boostrapping" approach !!
-
-
-My integration strategy involves categorizing Ansible runs into two distinct phases: instance bootstrapping and configuration drift management. 
-
-In my current role, I frequently use Terraform and have collaborated with many clients who are adopting Ansible as their primary configuration tool. This repository will document my journey toward developing a Terraform/Ansible bootstrapping approach.
-
-![alt text](/refimages/ansible-tf-intergration.png)
-
----
-
-### How my journey began.
+- *This repo will contain a CI/CD pipeline implementation of ansible using github actions.*
 
 My Ansible journey started in 2013 when I joined an Internet Service Provider (ISP) as a Network Operations Engineer. Although I didn't initially document my journey, I recently found myself immersed in an Ansible & Terraform project. Recognizing the value of documentation, I took the initiative to start documenting my experiences.
  The ISP that I was engaged with at the time was deeply committed to open source technologies across its operations. Within our Network Operations Center (NOC), we had distinct teams for Network Engineering, 
@@ -39,11 +26,28 @@ Although all engineers were expected to possess knowledge in both networks and s
 
 With the ISP experiencing a substantial growth in its customer base, we initiated discussions about implementing automation for all hosted services - SMTP (Postfix), HTTP (Apache), and DNS services.
 
-#### NB
-- Ansible is better suited to configuration management post infra deployment. 
-- This repo will contain a CI/CD pipeline implementation of ansible using github actions.
 
 ---
+### My "boostrapping" approach !!
+
+Currently, there is no straightforward Terraform/Ansible bootstrapper available, so creating your own integration is necessary. Here are a few considerations:
+
+- **Terraform with Packer-Baked AMIs**: Utilize Packer (typically with shell scripts) to create custom AMIs pre-configured for your nodes.
+- **Terraform with Provisioners**: Leverage Terraform's provisioners to automate tasks that need to occur after infrastructure provisioning.
+- **Custom Solutions**: Develop a tailored pipeline that combines Terraform and Ansible to streamline both infrastructure and configuration management processes.
+
+Each approach has unique benefits, and the best choice will depend on your specific requirements and environment.
+
+---
+
+My integration strategy involves categorizing Ansible runs into two distinct phases: instance bootstrapping and configuration drift management. 
+
+In my current role, I frequently use Terraform and have collaborated with many clients who are adopting Ansible as their primary configuration tool. This repository will document my journey toward developing a Terraform/Ansible bootstrapping approach.
+
+![alt text](/refimages/ansible-tf-intergration.png)
+
+---
+
 
 ### Let's set aside the bootstrapping for now. How exactly does Ansible work?
 
