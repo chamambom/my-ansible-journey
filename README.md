@@ -6,9 +6,9 @@ My experience with Ansible was in an on-premise environment that didn’t use Te
 
 **Which one is best suited for what?**
 
-*Short Answer*: If you are using Azure or AWS, use Terraform to build your cloud infrastructure (e.g., EC2 instances/Virtual machines, VPC/Vnets, AKS/EKS, firewall rules), and then utilize Ansible to manage for configuration management of applications inside the virtual machines.
+*`Short Answer`*: If you are using Azure or AWS, use Terraform to build your cloud infrastructure (e.g., EC2 instances/Virtual machines, VPC/Vnets, AKS/EKS, firewall rules), and then utilize Ansible to manage for configuration management of applications inside the virtual machines.
 
-*Ansible*: Ideal for configuration management, automating application deployment, and managing complex software setups.
+*`Ansible`*: Ideal for configuration management, automating application deployment, and managing complex software setups.
 *Terraform*: Best suited for infrastructure provisioning, allowing you to define, provision, and manage cloud resources in a consistent manner.
 
 - *This repo will contain a CI/CD pipeline implementation of ansible using github actions.*
@@ -32,9 +32,9 @@ With the ISP experiencing a substantial growth in its customer base, we initiate
 
 Currently, there is no straightforward Terraform/Ansible bootstrapper available, so creating your own integration is necessary. Here are a few considerations:
 
-- *Terraform with Packer-Baked AMIs*: Utilize Packer (typically with shell scripts) to create custom AMIs pre-configured for your nodes.
-- *Terraform with Provisioners*: Leverage Terraform's provisioners to automate tasks that need to occur after infrastructure provisioning.
-- *Custom Solutions*: Develop a tailored pipeline that combines Terraform and Ansible to streamline both infrastructure and configuration management processes.
+- *`Terraform with Packer-Baked AMIs`*: Utilize Packer (typically with shell scripts) to create custom AMIs pre-configured for your nodes.
+- *`Terraform with Provisioners`*: Leverage Terraform's provisioners to automate tasks that need to occur after infrastructure provisioning.
+- *`Custom Solutions`*: Develop a tailored pipeline that combines Terraform and Ansible to streamline both infrastructure and configuration management processes.
 
 Each approach has unique benefits, and the best choice will depend on your specific requirements and environment.
 
