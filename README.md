@@ -2,10 +2,7 @@
 
 *Under maintenance! documentation clean up & streamlining of ansible terraform intergration process*
 
-
-NB - Here's a rephrased version:
-
-My experience with Ansible was in an on-premise environment that didn’t use Terraform. Now that I’m familiar with both tools, this repo explores methods for integrating Ansible and Terraform.
+My experience with Ansible was in an on-premise environment that didn’t use Terraform. Now that I’m familiar with both tools, this repo explores methods for integrating Ansible & Terraform for organisations that want to avoid clickOps at all costs.
 
 *Which one is best suited for what?*
 
