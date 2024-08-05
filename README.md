@@ -13,6 +13,8 @@ My experience with Ansible was in an on-premise environment that didn’t use Te
 
 *`This repo will contain a CI/CD pipeline implementation of ansible using github actions.`*
 
+---
+
 ### How my journey Ansible Journey Began.
 
 My Ansible journey started in 2013 when I joined an Internet Service Provider (ISP) as a Network Operations Engineer. Although I didn't initially document my journey, I recently found myself immersed in an Ansible & Terraform project. Recognizing the value of documentation, I took the initiative to start documenting my experiences.
