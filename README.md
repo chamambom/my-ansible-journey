@@ -2,12 +2,12 @@
 
 *Under maintenance! documentation clean up & streamlining of ansible terraform intergration process*
 
-## How my journey Ansible Journey Began.
 
-NB - My experience in Ansible was in an environment that never used Terraform. Now that I have experience in both tools, this repo seeks out to explore approaches that one can use to intergrate the 2 tools. 
+NB - Here's a rephrased version:
 
+My experience with Ansible was in an on-premise environment that didn’t use Terraform. Now that I’m familiar with both tools, this repo explores methods for integrating Ansible and Terraform.
 
-Which one is best suited for what ?
+*Which one is best suited for what?*
 
 **Short Answer**: Use Terraform to build your cloud infrastructure (e.g., VPC, AKS, firewall rules), and then utilize Ansible for configuration management and further automation.
 
@@ -15,6 +15,9 @@ Which one is best suited for what ?
 **Terraform**: Best suited for infrastructure provisioning, allowing you to define, provision, and manage cloud resources in a consistent manner.
 
 - *This repo will contain a CI/CD pipeline implementation of ansible using github actions.*
+
+## How my journey Ansible Journey Began.
+
 
 My Ansible journey started in 2013 when I joined an Internet Service Provider (ISP) as a Network Operations Engineer. Although I didn't initially document my journey, I recently found myself immersed in an Ansible & Terraform project. Recognizing the value of documentation, I took the initiative to start documenting my experiences.
  The ISP that I was engaged with at the time was deeply committed to open source technologies across its operations. Within our Network Operations Center (NOC), we had distinct teams for Network Engineering, 
