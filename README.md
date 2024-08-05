@@ -29,7 +29,7 @@ With the ISP experiencing a substantial growth in its customer base, we initiate
 
 
 ---
-### My "boostrapping" approach !!
+### My "`boostrapping`" approach !!
 
 Currently, there is no straightforward Terraform/Ansible bootstrapper available, so creating your own integration is necessary. Here are a few considerations:
 
@@ -37,13 +37,12 @@ Currently, there is no straightforward Terraform/Ansible bootstrapper available,
 - *`Terraform with Provisioners`*: Leverage Terraform's provisioners to automate tasks that need to occur after infrastructure provisioning.
 - *`Custom Solutions`*: Develop a tailored pipeline that combines Terraform and Ansible to streamline both infrastructure and configuration management processes.
 
-Each approach has unique benefits, and the best choice will depend on your specific requirements and environment.
+Each approach has unique benefits, and the best choice will depend on your specific requirements and environment.My integration strategy involves categorizing Ansible runs into two distinct phases: 
 
----
+- Instance bootstrapping and 
+- configuration drift management. 
 
-My integration strategy involves categorizing Ansible runs into two distinct phases: instance bootstrapping and configuration drift management. 
-
-In my current role, I frequently use Terraform and have collaborated with many clients who are adopting Ansible as their primary configuration tool. This repository will document my journey toward developing a Terraform/Ansible bootstrapping approach.
+At the time of writing, I am still exploring different ways of achieving this and I havent yet found the simplest & scalable intergration method.
 
 ![alt text](/refimages/ansible-tf-intergration.png)
 
